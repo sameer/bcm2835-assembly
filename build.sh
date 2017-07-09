@@ -27,6 +27,12 @@ $i";
 			fi;
 		else
 			rm "$BIN/tmp/src/$i";
+			if [ -f "$BIN/obj/$i" ]; then
+				rm "$BIN/obj/$i"
+			fi;
+			if [ -f "$BIN/exec/$i" ]; then
+				rm "$BIN/exec/$i"
+			fi;
 		fi;
 	done;
 

@@ -2,4 +2,4 @@
 
 .global main		// Expose to assembler
 main:
-	b main
+	b main		// Branch to the same instruction
